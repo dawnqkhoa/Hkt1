@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HKT - Khám phá Hà Nội</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body class="font-sans bg-gray-50">
+
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-sm z-50 border-b">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-3xl font-bold tracking-tighter text-green-700">HKT</div>
+            <nav class="flex items-center gap-6 text-lg">
+                <a href="index.html" class="text-green-700 font-medium">Trang chủ</a>
+                <a href="amthuc.html" class="hover:text-green-700 transition-colors">Ẩm thực</a>
+                <a href="lichtrinh.html" class="hover:text-green-700 transition-colors">Lịch trình</a>
+                <a href="tour.html" class="hover:text-green-700 transition-colors">Tour Du Lịch</a>
+            </nav>
+            <div class="flex items-center gap-3" id="auth-buttons">
+                <a href="dangnhap.html" class="px-6 py-2.5 text-pink-600 hover:bg-pink-50 font-medium rounded-2xl transition-colors">Đăng nhập</a>
+                <a href="dangky.html" class="px-6 py-2.5 bg-pink-600 hover:bg-pink-700 text-white font-medium rounded-2xl transition-colors">Đăng ký</a>
+            </div>
+            <div class="hidden items-center gap-4" id="user-info">
+                <span id="username-display" class="text-gray-700 font-medium"></span>
+                <button onclick="logout()" class="px-4 py-2 bg-red-50 text-red-600 rounded-xl hover:bg-red-100 font-medium transition-colors">Đăng xuất</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero min-h-screen flex flex-col justify-center relative pt-16 hero-home">
+        <div class="max-w-7xl mx-auto px-6 text-center" data-aos="zoom-in">
+            <h1 class="text-white text-6xl md:text-8xl font-bold section-title tracking-wide shadow-black drop-shadow-2xl">Khám phá Hà Nội</h1>
+            <p class="text-white text-2xl md:text-4xl mt-6 font-medium drop-shadow-lg">Thủ đô nghìn năm văn hiến</p>
+        </div>
+    </section>
+
+    <section class="relative -mt-16 z-10 max-w-5xl mx-auto px-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="bg-white rounded-3xl shadow-xl flex flex-wrap justify-around items-center p-8 border border-gray-100">
+            <div class="text-center m-4">
+                <h3 class="text-4xl md:text-5xl font-bold text-green-600 mb-2">10+</h3>
+                <p class="text-gray-600 font-medium">Năm kinh nghiệm</p>
+            </div>
+            <div class="hidden md:block w-px h-16 bg-gray-200"></div>
+            <div class="text-center m-4">
+                <h3 class="text-4xl md:text-5xl font-bold text-green-600 mb-2">50+</h3>
+                <p class="text-gray-600 font-medium">Lịch trình Tour</p>
+            </div>
+            <div class="hidden md:block w-px h-16 bg-gray-200"></div>
+            <div class="text-center m-4">
+                <h3 class="text-4xl md:text-5xl font-bold text-green-600 mb-2">10k+</h3>
+                <p class="text-gray-600 font-medium">Du khách mỗi năm</p>
+            </div>
+            <div class="hidden md:block w-px h-16 bg-gray-200"></div>
+            <div class="text-center m-4">
+                <h3 class="text-4xl md:text-5xl font-bold text-green-600 mb-2">4.9</h3>
+                <p class="text-gray-600 font-medium">Sao đánh giá</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-green-600 font-bold tracking-widest uppercase mb-3">Về Thủ Đô</h2>
+                    <h3 class="text-4xl md:text-5xl font-semibold section-title mb-6 leading-tight text-gray-900">Hà Nội - Dấu ấn thời gian qua từng góc phố</h3>
+                    <div class="space-y-4 text-lg text-gray-600 leading-relaxed">
+                        <p>Nằm nép mình bên bờ sông Hồng trù phú, Hà Nội không chỉ là trung tâm văn hóa - kinh tế của đất nước, mà còn là nơi lưu giữ những giá trị lịch sử vĩ đại. Hơn 1000 năm trải qua những thăng trầm kể từ khi vua Lý Thái Tổ dời đô về Thăng Long, Hà Nội mang trong mình vẻ đẹp trầm mặc, cổ kính đan xen cùng sự vươn mình hiện đại mỗi ngày.</p>
+                        <p>Đến với mảnh đất kinh kỳ, du khách sẽ được chìm đắm trong những di tích ngàn năm như Văn Miếu - Quốc Tử Giám, Hoàng Thành Thăng Long; ngắm nhìn kiến trúc Đông Dương qua Nhà hát Lớn, cầu Long Biên; hay lạc bước vào không gian của 36 phố phường nhộn nhịp.</p>
+                        <p>Không chỉ thu hút bởi cảnh sắc, nét thanh lịch của con người Tràng An cùng nền ẩm thực phong phú, tinh tế được báo chí quốc tế ngợi ca chắc chắn sẽ để lại trong lòng bạn một mảnh tình không thể phai mờ.</p>
+                    </div>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="tour.html" class="px-8 py-4 bg-green-600 hover:bg-green-700 text-white rounded-2xl font-bold shadow-lg shadow-green-200 transition-all text-center">Khám phá Tour</a>
+                        <a href="amthuc.html" class="px-8 py-4 bg-pink-50 hover:bg-pink-100 text-pink-600 rounded-2xl font-bold transition-all text-center">Tinh hoa ẩm thực</a>
+                    </div>
+                </div>
+                <div class="relative mt-8 lg:mt-0" data-aos="fade-left">
+                    <img src="https://images.pexels.com/photos/18745093/pexels-photo-18745093.jpeg">
+                    <div class="absolute inset-0 bg-green-100 rounded-3xl transform translate-x-6 translate-y-6 -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-5xl font-semibold section-title mb-4">Địa điểm nổi bật</h2>
+                <p class="text-xl text-gray-600">Những điểm đến không thể bỏ lỡ khi tới thủ đô</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" id="places-grid"></div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-5xl font-semibold section-title mb-4">Góc nhìn du khách</h2>
+                <p class="text-xl text-gray-600">Khách hàng thực tế nói gì về trải nghiệm cùng HKT</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-3xl hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="0">
+                    <div class="text-yellow-400 text-2xl mb-4">★★★★★</div>
+                    <p class="text-gray-700 italic mb-8 leading-relaxed">"Đợt trước ra HN mình bị ngợp chả biết đi đâu, hên sao đọc được quả lịch trình trên web này. 10 điểm không có nhưng cho chả cá Lã Vọng với cafe Trứng nha! Tháng sau chắc chắn rủ hội bạn quay lại."</p>
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-lg">Thu Uyên</h4>
+                            <p class="text-sm text-gray-500">Khách du lịch tự túc từ TP.HCM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-3xl hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-yellow-400 text-2xl mb-4">★★★★★</div>
+                    <p class="text-gray-700 italic mb-8 leading-relaxed">"Nhà mình có con nhỏ nên chốt đặt tour luôn cho khỏe. Bạn hướng dẫn viên siêu nhiệt tình, chụp ảnh cho cả nhà cực có tâm. Chuyến đi quá nhàn và đáng đồng tiền bát gạo."</p>
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-lg">Đăng Khoa</h4>
+                            <p class="text-sm text-gray-500">Gia đình 4 người từ Đà Nẵng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-3xl hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-yellow-400 text-2xl mb-4">★★★★★</div>
+                    <p class="text-gray-700 italic mb-8 leading-relaxed">"Lần đầu ra Bắc, xài luôn lịch trình 1 ngày ở đây. Đạp xe lượn vòng Hồ Tây lúc chiều tà xong tối ra Tạ Hiện làm cốc bia hơi ngắm đường phố, cảm giác chill thực sự."</p>
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-lg">Khanh Đoàn</h4>
+                            <p class="text-sm text-gray-500">Du học sinh Hàn Quốc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 pt-16 pb-8 border-t border-gray-800 text-gray-400">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-gray-800 pb-12 mb-8">
+                <div>
+                    <h3 class="text-4xl font-bold text-white tracking-tighter mb-6">HKT</h3>
+                    <p class="leading-relaxed mb-6">Đồng hành cùng bạn trên mọi nẻo đường khám phá thủ đô ngàn năm văn hiến. Trải nghiệm chân thực, dịch vụ tận tâm.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-6">Liên kết nhanh</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="hover:text-green-400 transition-colors">Về chúng tôi</a></li>
+                        <li><a href="amthuc.html" class="hover:text-green-400 transition-colors">Cẩm nang ẩm thực</a></li>
+                        <li><a href="tour.html" class="hover:text-green-400 transition-colors">Danh sách Tour</a></li>
+                        <li><a href="lichtrinh.html" class="hover:text-green-400 transition-colors">Lịch trình tự túc</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-6">Thông tin liên hệ</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3"><span>📍</span> Tiểu vương quốc Long Biên, Hà Nội</li>
+                        <li class="flex items-center gap-3"><span>📞</span> 0912 345 678</li>
+                        <li class="flex items-center gap-3"><span>✉️</span> contact@hkt-travel.vn</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="detailModal" class="hidden fixed inset-0 bg-black/70 z-[100] items-center justify-center p-4">
+        <div class="modal-content bg-white max-w-6xl w-full rounded-[2rem] max-h-[95vh] overflow-y-auto">
+            <div id="modalBody" class="p-8 lg:p-12"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

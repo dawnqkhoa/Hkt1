@@ -1,0 +1,10 @@
+.tour-card {
+    background: white; border-radius: 24px; overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+.tour-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+.tour-card img { transition: transform 0.6s ease; }
+.tour-card:hover img { transform: scale(1.08); }

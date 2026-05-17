@@ -1,0 +1,12 @@
+.hero-food { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503606153840-29f073468c94?w=1600&q=80') center/cover; }
+
+.food-card {
+    background: white; border-radius: 24px; overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+.food-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+.food-card img { transition: transform 0.6s ease; }
+.food-card:hover img { transform: scale(1.08); }
